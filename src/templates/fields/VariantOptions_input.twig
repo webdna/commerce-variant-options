@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.editableTableField({
+		name: name,
+		value: value,
+		cols: [{type:'heading', heading: 'Name', handle:'name'}, {type:'singleline', heading: 'Value', handle:'value'}],
+		rows: options,
+		staticRows: true,
+		fixedRows: true,
+}) }}

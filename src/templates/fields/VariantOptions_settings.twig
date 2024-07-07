@@ -1,0 +1,18 @@
+{% import "_includes/forms" as forms %}
+
+{% set options = [] %}
+{% for group in craft.app.entries.getAllSections() %}
+	{% set options = options|merge([{
+		label: group.name,
+		value: group.id,
+	}]) %}
+{% endfor %}
+
+{{ forms.selectField({
+	label: 'Source',
+	instructions: 'Select a section that defines the option types and options.',
+	id: 'source',
+	name: 'source',
+	options: options,
+	value: field['source'] ?? null
+})}}

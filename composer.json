@@ -1,0 +1,39 @@
+{
+  "name": "webdna/commerce-variant-options",
+  "description": "variant options",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "support": {
+    "email": "info@webdna.co.uk",
+    "issues": "https://github.com/webdna/commerce-variant-options/issues?state=open",
+    "source": "https://github.com/webdna/commerce-variant-options",
+    "docs": "https://github.com/webdna/commerce-variant-options",
+    "rss": "https://github.com/webdna/commerce-variant-options/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "webdna\\commerce\\variantoptions\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "variant-options",
+    "name": "Variant-Options",
+    "developer": "webdna",
+    "documentationUrl": "https://github.com/webdna/commerce-variant-options",
+    "class": "webdna\\commerce\\variantoptions\\VariantOptions"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
